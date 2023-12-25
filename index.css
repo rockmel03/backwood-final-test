@@ -1,0 +1,456 @@
+/* lending-page starts here  -------------------------------------*/
+
+.lending-page-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(167, 143, 113);
+    background: url(../assets/Images/beds.webp);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.lending-page-2>div {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(167, 143, 113, 0.279); */
+    background-color: rgb(0 0 0 / 27%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.lending-page-2 h1 {
+    font-size: 6vw;
+
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.lending-page-2 p {
+    font-size: 1vw;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+/* lending-page ends here ------------------------------------- */
+
+/* hero section starts here================================= */
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: relative;
+    display: flex;
+    /* flex-direction: column-reverse; */
+
+    overflow: hidden;
+    /* background-color: rgb(242, 242, 242); */
+}
+
+.hero .hero-text {
+    width: 50%;
+    height: 100%;
+    padding: 3vw 2vw;
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.hero .hero-text #heading {
+    font-size: 6vw;
+    line-height: 1;
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+
+.hero .hero-text p {
+    font-size: 2.2vmin;
+    line-height: 1.1;
+    opacity: .7;
+}
+
+.discover-more-btn {
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+.discover-more-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: all ease .5s;
+}
+
+.discover-more-btn:hover::after {
+    width: 100%;
+}
+
+.hero .hero-img-container {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-img-container img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* hero section ends here====================================== */
+/* Products section starts here ================================*/
+.products {
+    width: 100%;
+    background-color: #FAEBD7;
+    color: #654B3A;
+    padding: 0 3vw;
+    padding-top: 3vw;
+}
+
+.products-text {
+    width: 30%;
+}
+
+.products-text h2 {
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: 3vw;
+}
+
+.products-text p {
+    font-size: 1vw;
+}
+
+.products-img-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* img swiper starts here ----------------- */
+.swiper {
+    width: 100%;
+    height: 50vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-slide a {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    filter: drop-shadow(4px 4px 12px #00000050);
+}
+
+/* img swiper ends here ----------------- */
+/* Products section ends here ================================*/
+
+/* ---------------------------------------------heritage section starts  */
+
+.heritage {
+    width: 100%;
+    height: 60vh;
+    /* background-color: yellow; */
+    padding: 0 10vw;
+    margin: 3vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.heritage-img {
+    width: 100%;
+    height: 100%;
+}
+
+.heritage-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heritage-text {
+    width: 50%;
+    color: #000;
+}
+
+.heritage-text h2 {
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.heritage-text p {
+    font-size: 0.9vw;
+    opacity: 0.9;
+    margin: 1vw 0;
+}
+
+
+/* -----------------------------heritage section ends  */
+
+/* ----------------------------services section starts */
+
+.services {
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+}
+
+.services .services-text {
+    padding: 0 3vw;
+    /* background-color: green; */
+}
+
+.services-text h2 {
+    font-weight: 400;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+.services-text p {
+    font-size: .9vw;
+    margin: 0.5vw 0;
+    width: 80%;
+}
+
+.services-text>div {
+    margin: 2vw 0;
+}
+
+.services-text a::after {
+    background-color: #fff;
+}
+
+.services img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----------------------------services section ends */
+
+/*-------------------------- banner section starts */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: url(./assets/Images/87.webp);
+    color: #fff;
+    backdrop-filter: grayscale(1);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner>div {
+
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    flex-direction: column;
+
+    background-color: #0000003b;
+}
+
+.banner>div h1 {
+    font-size: 3vw;
+    font-weight: 400;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.banner>div h1 span {
+    font-size: 7vw;
+    font-weight: 400;
+    font-family: "january shine";
+    border-bottom: 3px solid #fff;
+}
+
+.banner>div p {
+    width: 30%;
+    text-align: center;
+    font-size: 1vw;
+}
+
+/* ---------------------------banner section ends */
+
+
+
+@media (max-width: 600px) {
+
+
+    .lending-page-2 h1 {
+        font-size: 11vw;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 1;
+        text-align: center;
+        white-space: wrap;
+    }
+
+    .lending-page-2 p {
+        font-size: 2vw;
+        font-weight: 400;
+        white-space: unset;
+        width: 75%;
+    }
+
+    .products {
+        padding: 0 0vw;
+        padding-top: 4vw;
+    }
+
+    .products-text {
+        padding: 0 4vw;
+        width: 100%;
+    }
+
+    .products-text h2 {
+        font-size: 6vw;
+        margin-bottom: 10px;
+    }
+
+    .products-text p {
+        font-size: 2vw;
+        /* text-align: justify; */
+    }
+
+    .products-img-container {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        min-width: 320px;
+    }
+
+    .heritage {
+        padding: 0rem 1vw;
+        margin: 2vw 0;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .heritage-text {
+        width: 50%;
+    }
+
+    .heritage-text h2 {
+        font-size: 4.4vw;
+    }
+
+    .heritage-text p {
+        font-size: 2vw;
+        width: 100%;
+    }
+
+    .heritage-img img {
+        object-position: 30%;
+    }
+
+    .discover-more-btn{
+        font-size: 2vw;
+    }
+    .services {
+        /* height: 100vh; */
+        height: fit-content;
+        flex-direction: column;
+        align-items: start;
+        overflow: hidden;
+    }
+
+    .services .services-text {
+        padding: 5vw 4vw;
+        height: 50%;
+    }
+
+    .services-text>div {
+        margin: 1.5vw 0;
+    }
+
+    .services-text h2 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .services-text>div p {
+        font-size: 2vw;
+        width: 100%;
+    }
+
+    .services img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+
+    .banner>div h1 {
+        font-size: 5vw;
+    }
+
+    .banner>div h1 span {
+        font-size: 15vw;
+        border-bottom: 2px solid #fff;
+    }
+
+    .banner>div p {
+        width: 80%;
+        font-size: 2vw;
+    }
+
+}

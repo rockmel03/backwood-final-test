@@ -1,0 +1,139 @@
+
+.products-lending-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50vh;
+
+    background: url(../assets/Images/beds.webp) fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.product-detail-img {
+    padding-left: 2vw;
+    max-height: 70vh;
+}
+
+
+
+
+
+/* product-3 section starts here================================================================ */
+
+.product-3{
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+
+    padding: 2vw 10vw;
+}
+.product-3:nth-child(odd){
+    background-color: antiquewhite;
+}
+.product-3 > div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: start;
+    gap: 2vw;
+}
+.product-3 > div:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.product-3 .product-3-text{
+    width: 50%;
+}
+
+.product-3  h2{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.product-3  p{
+    font-size: 1vw;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+.product-3  ul li{
+    line-height: 1.2;
+    font-size: 1vw;
+    font-weight: 500;
+    list-style: none;
+}
+.product-3 .product-3-img{
+ width: 50%;
+ max-height: 50vh;
+ overflow: hidden;
+}
+.product-3 .product-3-img img{
+ width: 100%;
+ /* height: 100%; */
+ object-fit: cover;
+ object-position: center;
+}
+/* product-3 section ends here================================================================ */
+
+
+
+
+
+
+
+@media (max-width : 640px) {
+    
+
+    /* product-3 section starts here ------------------------- */
+
+    
+.product-3{
+    padding: 2vw 5vw;
+}
+.product-3 > div{
+    flex-direction: column;
+}
+.product-3 > div:nth-child(even){
+    flex-direction: column;
+}
+
+.product-3 .product-3-text{
+    width: 100%;
+}
+
+.product-3  h2{
+    font-size: 6vw;
+}
+.product-3  p{
+    font-size: 2vw;
+    line-height: unset;
+}
+.product-3  ul li{
+    line-height: unset;
+    font-size: 2vw;
+}
+.product-3 .product-3-img{
+ width: 100%;
+ max-height: unset;
+ overflow: hidden;
+}
+
+
+    /* product-3 section ends here ------------------------- */
+}
+
+
+
+
+
+
+
+
+
+
+
+

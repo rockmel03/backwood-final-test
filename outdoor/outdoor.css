@@ -1,0 +1,31 @@
+.products-lending-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50vh;
+
+    background: url(../assets/Images/beds.webp) fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.product-detail-img {
+    padding-left: 2vw;
+    max-height: 60vh;
+}
+
+
+.product-img img {
+    width: 74%;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 640px) {
+    
+    .product-img img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,364 @@
+
+
+/* services page-1 starts --------------------------------------- */
+.services-page1{
+    width: 100%;
+    height: 50vh;
+    /* background-color: rgb(189, 189, 189); */
+
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    
+}
+.services-page1 h1{
+    font-size: 4vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* services page-1 ends --------------------------------------- */
+/* services page-2 starts --------------------------------------- */
+.services-page2{
+    width: 100%;
+    height: 70vh;
+    padding: 2vw 10vw;
+
+    display: flex;
+    align-content: start;
+    gap: 2vw;
+}
+.services-page2 img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-page2-text {
+    width: 50%;
+}
+.services-page2-text h2{
+    width: fit-content;
+    font-size: 3vw;
+    position: relative;
+}
+.services-page2-text h2::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #654B3A;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transition: all ease .2s;
+}
+.services-page2-text h2:hover::after{
+    width: 0;
+}
+.services-page2-text p{
+    font-size: 1vw;
+}
+/* services page-2 ends --------------------------------------- */
+/* services page-3 ends --------------------------------------- */
+.services-page3{
+    width: 100%;
+    height: 80vh;
+    padding: 2vw 10vw;
+
+
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    gap : 2vw ;
+}
+.services-page3> img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.services-page3-text{
+    width: 50%;
+    height: 100%;
+}
+.services-page3-text h2{
+   font-size: 3vw;
+   line-height: 1.1;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.services-page3-text h3{
+    width: fit-content;
+   font-size: 2.5vw;
+   font-weight: 400;
+   position: relative;
+}
+.services-page3-text h3::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #654B3A;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transition: all ease .2s;
+}
+.services-page3-text p{
+    font-size: 1vw;
+    margin: 10px 0;
+}
+
+.services-page3-text img{
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    object-position: bottom;
+}
+/* services page-3 ends --------------------------------------- */
+/* services cards starts --------------------------------------- */
+.services-card-container{
+    width: 100%;
+    min-height: 30vh;
+    /* background-color: salmon; */
+    padding: 1vw 3vw;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap : 2vw;
+    /* flex-wrap: wrap; */
+
+}
+.services-card-container .service-box {
+
+    /* overflow: hidden; */
+    width: 420px;
+    /* height: 50vh; */
+    border-radius: 5px;
+    padding-bottom: 2vw;
+
+    background-color: #ededed;
+    /* box-shadow: 0 0 12px 2px #00000050; */
+    display : flex;
+    align-items : center;
+    justify-content : space-between;
+    gap : 2vw;
+    flex-direction: column;
+    text-align: center;
+
+    transition: all ease .5s;
+}
+
+.services-card-container .service-box:hover{
+    transform: scale(1.05);
+}
+.services-card-container .service-box:hover .icon-img-div{
+    /* filter: drop-shadow( 0 4px 8px #99b9e7); */
+    /* box-shadow: 0 0 4px 12px ; */
+    transform: scale(1.1) translateY(-10%);
+
+}
+.icon-img-div{
+    width: 65px;
+    height: 65px;
+    /* background-color: red; */
+    padding: .2vw;
+    border-radius: 50%;
+
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    transition: all ease .2s;
+}
+.icon-img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#delivery-truck{
+    scale: 1.3;
+    transform: translateY(-9px);
+    object-position: bottom;
+}
+
+.box-text{
+    width: 100%;
+    /* height: 50%; */
+    padding: 0 1vw;
+
+    display : flex;
+    align-items : center;
+    justify-content : start;
+    flex-direction: column;
+    gap: 10px;
+}
+.services-card-container h2{
+  font-size: 1.5vw;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.services-card-container p{
+  font-size: 1vw;
+  line-height: 1;
+  opacity: .8;
+  /* text-align: center; */
+}
+/* services cards ends --------------------------------------- */
+
+
+
+
+@media (max-width: 750px) {
+
+    .services-page2 {
+        /* width: 100%; */
+        height: 60vh;
+        padding: 2vw 5vw;
+        /* display: flex; */
+        /* align-content: start; */
+        gap: 3vw;
+    }
+    /* .services-page2 img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    } */
+    
+    .services-page2-text {
+        width: 50%;
+    }
+    .services-page2-text h2 {
+        font-size: 5vw;
+    }
+    .services-page2-text p {
+        font-size: 1vw;
+        margin: 10px 0;
+        text-align: justify;
+    }
+ 
+    .services-card-container{
+        flex-wrap: wrap;
+        padding: 1vw 1vw;
+    }
+
+    .services-card-container .service-box {
+        width: 320px;
+        min-height: 200px;
+        height: fit-content;
+        padding-bottom: 2vw;
+        justify-content: center;
+    }
+
+    .services-card-container h2 {
+        font-size: 2.5vw;
+    }
+    .services-card-container p {
+        font-size: 2vw;
+    }
+}
+
+
+
+
+
+@media (max-width: 550px) {
+    .services-page1 {
+        width: 100%;
+        height: 40vh;
+        /* background-color: rgb(189, 189, 189); */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .services-page1 h1 {
+        font-size: 8vw;
+        /* font-weight: 500; */
+        /* text-transform: uppercase; */
+    }
+    .services-page2 {
+        /* width: 100%; */
+        height: fit-content;
+        padding: 2vw 5vw;
+        /* display: flex; */
+        /* align-content: start; */
+        gap: 3vw;
+        flex-direction: column;
+    }
+    .services-page2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .services-page2-text {
+        width: 100%;
+    }
+    .services-page2-text h2 {
+        font-size: 8vw;
+        font-weight: 500;
+    }
+    .services-page2-text p {
+        font-size: 1vw;
+        margin: 10px 0;
+        text-align: justify;
+    }
+
+    .services-page3 {
+        /* width: 100%; */
+        height: unset;
+        padding: 2vw 5vw;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        gap: 2vw;
+        flex-direction: column;
+    }
+    .services-page3-text {
+        width: 100%;
+        /* height: 100%; */
+    }
+    .services-page3> img {
+        width: 100%;
+        /* height: 100%; */
+        /* object-fit: cover; */
+    }
+    .services-page3-text h2 {
+        font-size: 7vw;
+    }
+    .services-page3-text h3 {
+        font-size: 5vw;
+    }
+    .services-page3-text p {
+        font-size: 2.5;
+        margin: 10px 0;
+    }
+ 
+    .services-card-container{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: unset;
+        padding: 8vw 1vw;
+        gap : 3vw;
+    }
+
+    .services-card-container .service-box {
+        width: 320px;
+        min-height: 200px;
+        height: fit-content;
+        justify-content: center;
+        padding-bottom: 3vw;
+    }
+
+    .services-card-container h2 {
+        font-size: 4.5vw;
+    }
+    .services-card-container p {
+        font-size: 2.5vw;
+    }
+}
+

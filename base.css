@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+    font-family: "january shine";
+    src: url(./assets/fonts/January\ Shine.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #fefef6;
+    color: #654b3a;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgb(46, 46, 46);
+    border-radius: 50px;
+}
+
+*::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+}
+
+*::selection {
+    color: rgb(201, 138, 21);
+}
+
+#main {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    background: #0000007e;
+    background-blend-mode: difference;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* navigation bar starts ================================ */
+nav {
+    position: sticky;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    background-color: #fff;
+    color: #000;
+    padding: 0 3vw;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 5px #00000050;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+nav .logo {
+    height: 100%;
+    padding: 10px 0;
+}
+
+nav .logo img {
+    height: 82%;
+    transform: translate(0, 10%);
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    height: 100%;
+}
+
+nav>ul li {
+    height: 100%;
+    list-style: none;
+}
+
+nav>ul li span,
+nav>ul li a {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav>ul li a::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-origin: left;
+    transform: translate(-50%);
+    transition: all ease 0.2s;
+}
+
+nav>ul li a:hover::after {
+    width: 100%;
+}
+
+nav .nav-dropdown {
+    position: relative;
+}
+
+nav .nav-dropdown .nav-dropdown-links {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #fff;
+    padding: 0 10px;
+    height: 0;
+    overflow: hidden;
+}
+
+nav .nav-dropdown .nav-dropdown-links a {
+    padding: 8px 10px;
+    width: 100%;
+}
+
+nav ul li:hover .nav-dropdown-links {
+    height: fit-content;
+}
+
+nav>#menu-btn {
+    font-size: 2vw;
+    cursor: pointer;
+    display: none;
+}
+
+nav a:hover {
+    color: #654b3a;
+}
+
+.sidenav {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    width: 320px;
+    padding: 3rem 1rem;
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+}
+
+#close-sidenav {
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sidenav h2{
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 500;
+}
+.sidenav-links {
+    width: 100%;
+    max-height: 80%;
+    overflow-y: scroll;
+    list-style: none;
+    padding-right: 2rem;
+
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.sidenav-links li {
+    width: 100%;
+}
+
+.sidenav-links span,
+.sidenav-links a {
+    width: 100%;
+    background-color: #ffffff30;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.sidenav-links span:hover,
+.sidenav-links a:hover{
+    background-color: #ffffff50;
+    padding-left: 2.5rem;
+}
+
+.dropdown-links{
+    padding-left: 1rem;
+    height: 0;
+    overflow: hidden;
+    transition: all ease-in-out .5s;
+}
+
+.dropdown-links a{
+    padding: .5rem 2rem;
+}
+.sidenav-dropdown:hover .dropdown-links{
+    height: fit-content;
+}
+.dropdown-links a{
+  margin-top: 10px;
+}
+
+
+
+/* navbar ends here ============================================ */
+
+/* ----------------------------footer section starts */
+
+#footer {
+    width: 100%;
+    background-color: #685745;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.footer-top {
+    background-color: #88735c;
+    color: #fff;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding: 3vw 0;
+}
+
+.footer-top #logo {
+    width: 200px;
+}
+
+.footer-top>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-top a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8vw;
+    font-weight: 400;
+}
+
+.footer-top-links {
+    text-transform: uppercase;
+}
+
+.footer-top>div a:nth-child(1) {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 101%;
+    margin-bottom: 1vw;
+}
+
+.footer-top .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-top .email button,
+.footer-top .email input {
+    background-color: transparent;
+    color: inherit;
+    font-size: 0.8vw;
+    padding: 0.5vw 0.2vw;
+    border: none;
+    outline: none;
+}
+
+.footer-top .email input {
+    border-bottom: 1px solid #fff;
+}
+
+.footer-top .email input::placeholder {
+    font-weight: bold;
+    opacity: 1;
+    color: inherit;
+}
+
+.footer-top .email button {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-top>div:nth-last-child(1) h3 {
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    color: #fff;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom h5 {
+    font-weight: 400;
+}
+
+/* ----------------------------footer section ends */
+
+@media (max-width: 640px) {
+    nav {
+        padding: 0 2vw;
+        height: 80px;
+    }
+
+    nav .navlinks {
+        display: none;
+    }
+
+    nav .logo {
+        padding: 2vw 0;
+    }
+
+    nav #menu-btn {
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: block;
+    }
+
+    .footer-top {
+        flex-wrap: wrap;
+        gap: 5vw;
+        padding: 8vw 4vw;
+        row-gap: 6vw;
+    }
+
+    .footer-top #logo {
+        width: 300px;
+    }
+
+    .footer-top a {
+        /* color: #fff; */
+        /* text-decoration: none; */
+        font-size: 2.5vw;
+        /* font-weight: 400; */
+    }
+
+    .footer-top .email button,
+    .footer-top .email input {
+        font-size: 2.5vw;
+        font-weight: 400;
+        padding: 0.5vw 0.2vw;
+    }
+
+    .footer-top>div:nth-child(2) {
+        min-width: 150px;
+        text-align: center;
+        /* background-color: red; */
+    }
+
+    .footer-top>div:nth-last-child(1) h3 {
+        font-size: 3vw;
+    }
+
+    .footer-bottom h5 {
+        text-align: center;
+    }
+}
