@@ -177,7 +177,9 @@ nav a:hover {
 
     position: fixed;
     top: 0;
-    right: -100%;
+    z-index: 99;
+    /* right: -100%; */
+    display: none;
 }
 
 #close-sidenav {

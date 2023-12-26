@@ -1,24 +1,24 @@
 swiperJs();
-servicePageAnime ();
+servicePageAnime();
 homePageAnime();
 landingPageAnime();
-function landingPageAnime(){
+function landingPageAnime() {
     let tl = gsap.timeline();
     tl.from('.lending-page-2', {
-        y : "100%",
+        y: "100%",
         duration: 1,
     })
     tl.from('.lending-page-2 h1 span', {
-        x : -100,
+        x: -100,
         opacity: 0,
         duration: 1.5,
         stagger: .5,
-    },"anime")
+    }, "anime")
     tl.from('.lending-page-2 p', {
-        y : 100,
+        y: 100,
         opacity: 0,
         duration: 1.5,
-    },"anime")
+    }, "anime")
 }
 
 function homePageAnime() {
@@ -27,31 +27,31 @@ function homePageAnime() {
         y: 100,
         duration: .5,
     })
-    tl.from('.hero-text #heading',{
+    tl.from('.hero-text #heading', {
         y: 100,
         opacity: 0,
         duration: .5,
         stagger: .1,
     })
-    tl.from('.hero-text p',{
+    tl.from('.hero-text p', {
         y: 100,
         duration: .5,
-        opacity : 0,
+        opacity: 0,
     })
-    tl.from('.hero-text a',{
+    tl.from('.hero-text a', {
         x: -100,
         duration: .5,
-        opacity : 0,
+        opacity: 0,
     })
 
-    gsap.from('.hero-img-container img',{
-        scale : 0,
-        duration :1,
+    gsap.from('.hero-img-container img', {
+        scale: 0,
+        duration: 1,
         delay: .5,
     })
 }
 
-function swiperJs () {
+function swiperJs() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: (window.outerWidth > 640 ? 3 : 1),
         spaceBetween: 10,
@@ -59,37 +59,59 @@ function swiperJs () {
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
-          },
+        },
         // pagination: {
         //   el: ".swiper-pagination",
         //   clickable: true,
         // },
-      });
+    });
 }
 
-function servicePageAnime () {
-    gsap.from('#services .services-text',{
+function servicePageAnime() {
+    gsap.from('#services .services-text', {
         x: "-100%",
         duration: 1,
-        scrollTrigger : {
-            scroller : "#main",
+        scrollTrigger: {
+            scroller: "#main",
             trigger: "#services .services-text",
             start: "top 90%",
-            end : "top 60%",
+            end: "top 60%",
             // markers: true,
             scrub: 3,
         }
     })
-    gsap.from('#services img',{
+    gsap.from('#services img', {
         x: "100%",
         duration: 1,
-        scrollTrigger : {
-            scroller : "#main",
+        scrollTrigger: {
+            scroller: "#main",
             trigger: "#services img",
             start: "top 90%",
-            end : "top 80%",
+            end: "top 80%",
             // markers: true,
             scrub: 3,
         }
     })
 }
+
+
+// nav bar animations ================================
+const tl = gsap.timeline();
+
+tl.from('nav', {
+    y: -100,
+    duration: 1,
+})
+
+tl.from('nav ul li', {
+    y: -100,
+    opacity: 0,
+    stagger: .1,
+
+})
+gsap.from('nav #menu-btn', {
+    // x : 100,
+    rotate: 360,
+    opacity: 0,
+    duration: 1.5,
+})
