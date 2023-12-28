@@ -40,7 +40,7 @@ function navbarFunctions() {
         // document.querySelector('.sidenav').style.right = 0;
         gsap.to('.sidenav', {
             right: 0,
-            display: "block",
+            display: "flex",
             duration: .2,
         })
     })
